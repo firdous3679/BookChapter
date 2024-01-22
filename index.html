@@ -219,13 +219,31 @@
     <div class="container">
         <h2>Chapter Submission</h2>
         <div class="submission-form">
-            <form action="YOUR_SERVER_SIDE_ENDPOINT" method="POST">
-                <!-- Form fields unchanged -->
+            <form action="https://formspree.io/f/xrgnegwrL" method="POST">
+                <input type="hidden" name="_subject" value="New Chapter Submission">
+                <input type="text" name="_gotcha" style="display:none">
+                
+                <label for="authorName">Author Name(s)</label>
+                <input type="text" id="authorName" name="authorName" required>
+
+                <label for="affiliation">Affiliation(s)</label>
+                <input type="text" id="affiliation" name="affiliation" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="_replyto" required>
+
+                <label for="chapterTitle">Chapter Title</label>
+                <input type="text" id="chapterTitle" name="chapterTitle" required>
+
+                <label for="abstract">Abstract (500 words max)</label>
+                <textarea id="abstract" name="abstract" required></textarea>
+
                 <input type="submit" value="Submit Chapter">
             </form>
         </div>
     </div>
 </section>
+
 
 <footer>
     <div class="container">
